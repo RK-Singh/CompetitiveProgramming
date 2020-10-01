@@ -1,9 +1,8 @@
 #https://www.hackerrank.com/challenges/restaurant/
 def hcf(a,b):
-    rem = a%b
-    if rem == 0:
+    if a%b == 0:
         return b
-    return hcf(b,rem)
+    return hcf(b,a%b)
 
 T = int(input())
 while T > 0:
